@@ -10,7 +10,7 @@ class ActivityLevel2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTestLevel2Binding.inflate(layoutInflater)
-        setContentView(R.layout.activity_test_level2)
+        setContentView(binding.root)
 
 
         val resultValue = binding.answer1.text.toString()
@@ -25,9 +25,9 @@ class ActivityLevel2 : AppCompatActivity() {
         val mult = a * b
         val dec = a / b
 
-        binding.tvSign.text = sign3
-        binding.tvText0.text = a.toString()
-        binding.tvText1.text = b.toString()
+        binding.tvSign1.text = sign3
+        binding.tvText10.text = a.toString()
+        binding.tvText11.text = b.toString()
 
         binding.butCheck1.setOnClickListener {
 

@@ -12,7 +12,7 @@ class ActivityLevel3 : AppCompatActivity() {
         binding = ActivityHardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val resultValue = binding.answer.text.toString()
+        val resultValue = binding.answer2.text.toString()
         val a = (10..399).random()
         val b = (10..499).random()
         val sign = "+"
@@ -24,9 +24,9 @@ class ActivityLevel3 : AppCompatActivity() {
         val mult = a * b
         val dec = a / b
 
-        binding.tvSign.text = sign2
-        binding.tvText0.text = a.toString()
-        binding.tvText1.text = b.toString()
+        binding.tvSign2.text = sign2
+        binding.tvText20.text = a.toString()
+        binding.tvText21.text = b.toString()
 
         binding.butCheck.setOnClickListener {
 

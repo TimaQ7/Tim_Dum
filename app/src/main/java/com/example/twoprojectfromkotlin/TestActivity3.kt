@@ -14,9 +14,9 @@ class TestActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTest2Binding.inflate(layoutInflater)
-        setContentView(R.layout.activity_hard)
+        setContentView(binding.root)
 
-        val resultValue = binding.answer.text.toString()
+        val resultValue = binding.answer0.text.toString()
         val a = (10..99).random()
         val b = (10..99).random()
         val sign = "+"
@@ -28,9 +28,9 @@ class TestActivity3 : AppCompatActivity() {
         val mult = a * b
         val dec = a / b
 
-        binding.tvSign.text = sign
-        binding.tvText0.text = a.toString()
-        binding.tvText1.text = b.toString()
+        binding.tvSign0.text = sign
+        binding.tvText00.text = a.toString()
+        binding.tvText01.text = b.toString()
 
         binding.butCheck.setOnClickListener {
 

@@ -4,11 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.twoprojectfromkotlin.databinding.ActivityMainBinding
+import com.example.twoprojectfromkotlin.databinding.ActivityTestBinding
 
 class TestActivity : AppCompatActivity() {
+    lateinit var binding: ActivityTestBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_test)
+        binding = ActivityTestBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
     fun onClickPlay(view : View) {
         val intent = Intent(this, TestActivity3::class.java)

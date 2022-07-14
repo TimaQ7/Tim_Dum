@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/answer"
+        android:id="@+id/answer0"
         android:layout_width="107dp"
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
@@ -28,9 +28,9 @@
         android:onClick="onClickCheck"
         android:text="@string/check"
         app:layout_constraintBottom_toTopOf="@+id/butBack2"
-        app:layout_constraintEnd_toEndOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="@+id/answer0"
         app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="@+id/answer" />
+        app:layout_constraintStart_toStartOf="@+id/answer0" />
 
     <Button
         android:id="@+id/butBack2"
@@ -51,7 +51,7 @@
         android:text="@string/compute"
         android:textSize="40sp"
         android:textStyle="normal|bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvSign"
+        app:layout_constraintBottom_toTopOf="@+id/tvSign0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,42 +64,42 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/butCheck"
-        app:layout_constraintEnd_toEndOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="@+id/answer0"
         app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="@+id/answer" />
+        app:layout_constraintStart_toStartOf="@+id/answer0" />
 
     <TextView
-        android:id="@+id/tvText1"
+        android:id="@+id/tvText01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="c"
         android:textSize="24sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/tvSign"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSign0"
         app:layout_constraintEnd_toEndOf="@+id/tvGame2"
-        app:layout_constraintTop_toTopOf="@+id/tvSign" />
+        app:layout_constraintTop_toTopOf="@+id/tvSign0" />
 
     <TextView
-        android:id="@+id/tvSign"
+        android:id="@+id/tvSign0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:text="b"
         android:textSize="24sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/answer"
-        app:layout_constraintEnd_toStartOf="@+id/tvText1"
+        app:layout_constraintBottom_toTopOf="@+id/answer0"
+        app:layout_constraintEnd_toStartOf="@+id/tvText01"
         app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/tvText0" />
+        app:layout_constraintStart_toEndOf="@+id/tvText00" />
 
     <TextView
-        android:id="@+id/tvText0"
+        android:id="@+id/tvText00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="a"
         android:textSize="24sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/tvSign"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSign0"
         app:layout_constraintStart_toStartOf="@+id/tvGame2"
-        app:layout_constraintTop_toTopOf="@+id/tvSign" />
+        app:layout_constraintTop_toTopOf="@+id/tvSign0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
