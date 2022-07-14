@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <TextView
+        android:id="@+id/tvLevel"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_a_level"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <Button
+        android:id="@+id/butEasy"
+        android:layout_width="125dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onClickPlay"
+        android:text="@string/easy"
+        app:layout_constraintEnd_toEndOf="@+id/tvLevel"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/tvLevel"
+        app:layout_constraintTop_toBottomOf="@+id/tvLevel" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="onClickBack"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="@+id/butHard"
+        app:layout_constraintStart_toStartOf="@+id/butHard"
+        app:layout_constraintTop_toBottomOf="@+id/butHard" />
+
+    <Button
+        android:id="@+id/butHard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickPlay3"
+        android:text="@string/hard"
+        app:layout_constraintEnd_toEndOf="@+id/butNorm"
+        app:layout_constraintStart_toStartOf="@+id/butNorm"
+        app:layout_constraintTop_toBottomOf="@+id/butNorm" />
+
+    <Button
+        android:id="@+id/butNorm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ellipsize="middle"
+        android:onClick="onClickPlay2"
+        android:text="@string/normal"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/butEasy"
+        app:layout_constraintStart_toStartOf="@+id/butEasy"
+        app:layout_constraintTop_toBottomOf="@+id/butEasy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

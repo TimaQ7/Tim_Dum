@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">two project from Kotlin</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="hello">Hello</string>
+    <string name="welcome">Welcome</string>
+    <string name="start" translatable="false">Start</string>
+    <string name="mat_brain">MAT BRAIN</string>
+    <string name="compute">Compute</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="select_a_level">Select a level</string>
+    <string name="easy">Easy</string>
+    <string name="hard">Hard</string>
+    <string name="normal">Normal</string>
+    <string name="check">Check</string>
+    <string name="nickname">Nickname:</string>
+    <string name="answer">answer:</string>
+</resources>
