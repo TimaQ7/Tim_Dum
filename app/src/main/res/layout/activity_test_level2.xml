@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/answer1"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/answer"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tvMessage"
+        app:layout_constraintEnd_toEndOf="@+id/tvGame2"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/tvGame2" />
+
+    <Button
+        android:id="@+id/butCheck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:onClick="onClickCheck"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/check"
+        app:layout_constraintBottom_toTopOf="@+id/butBack1"
+        app:layout_constraintEnd_toEndOf="@+id/answer1"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/answer1" />
+
+    <Button
+        android:id="@+id/butBack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:onClick="onClickBack"
+        android:text="@string/back"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/butCheck1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/butCheck1" />
+
+    <TextView
+        android:id="@+id/tvGame2"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compute"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSign1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/butCheck1"
+        app:layout_constraintEnd_toEndOf="@+id/answer1"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/answer1" />
+
+    <TextView
+        android:id="@+id/tvText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="c"
+        android:fontFamily="@font/roboto_bold"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSign1"
+        app:layout_constraintEnd_toEndOf="@+id/tvGame2"
+        app:layout_constraintTop_toTopOf="@+id/tvSign1" />
+
+    <TextView
+        android:id="@+id/tvSign1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="b"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/answer1"
+        app:layout_constraintEnd_toStartOf="@+id/tvText11"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/tvText10" />
+
+    <TextView
+        android:id="@+id/tvText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSign1"
+        app:layout_constraintStart_toStartOf="@+id/tvGame2"
+        app:layout_constraintTop_toTopOf="@+id/tvSign1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

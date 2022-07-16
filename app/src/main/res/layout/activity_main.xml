@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/welcome"
+        android:textColor="@color/blue_dark"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/butStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="onClickStart"
+        android:text="@string/start"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv1"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/textInput"
+        app:rippleColor="@color/blue_dark" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvName"
+        style="@style/Widget.Material3.Snackbar.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/mat_brain"
+        android:textColor="@color/blue_dark"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textview.MaterialTextView>
+    <!--<TextView
+        android:id="@+id/tvName"
+        style="@style/Widget.Material3.Snackbar.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="@string/mat_brain"
+        android:textColor="@color/blue_dark"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="100dp"
+        android:hint="@string/nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1">
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:drawableStart="@drawable/ic_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- <EditText
+         android:id="@+id/nickname"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:hint="@string/nickname"
+         android:inputType="textPersonName"
+         android:minHeight="48dp"
+         app:layout_constraintBottom_toTopOf="@+id/butStart"
+         app:layout_constraintEnd_toEndOf="@+id/tv1"
+         app:layout_constraintStart_toStartOf="@+id/tv1"
+         app:layout_constraintTop_toBottomOf="@+id/tv1"
+         android:layout_marginTop="16dp"
+         app:layout_constraintVertical_bias="0.492" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

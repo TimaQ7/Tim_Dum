@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="green">#1B5E20</color>
+    <color name="green_dark">#003300</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="blue">#0288D1</color>
+    <color name="blue_dark">#005B9F</color>
+    <color name="blue_light">#81D4FA</color>
+    <color name="my_app_primary_dark">#81D4FA</color>
+    <color name="my_app_background">#fffffbfe</color>
+    <color name="my_app_primary">#ff6750a4</color>
+    <color name="my_app_secondary">#ff625b71</color>
+    <color name="my_app_error">#ffb3261e</color>
+    <color name="my_app_primary_inverse">#ffd0bcff</color>
+    <color name="my_app_primary_container">#ffeaddff</color>
+    <color name="my_app_on_primary_container">#ff21005d</color>
+    <color name="my_app_secondary_container">#ffe8def8</color>
+    <color name="my_app_on_secondary_container">#ff1d192b</color>
+    <color name="my_app_tertiary">#ff7d5260</color>
+    <color name="my_app_on_tertiary">#ffffff</color>
+    <color name="my_app_tertiary_container">#ffffd8e4</color>
+    <color name="my_app_on_tertiary_container">#ff31111d</color>
+    <color name="my_app_surface_variant">#ffe7e0ec</color>
+    <color name="my_app_on_surface_variant">#ff49454f</color>
+    <color name="my_app_inverse_surface">#ff313033</color>
+    <color name="my_app_inverse_on_surface">#fff4eff4</color>
+    <color name="my_app_outline">#ff79747e</color>
+    <color name="my_app_on_error_container">#ff410e0b</color>
+    <color name="my_app_error_container">#fff9dedc</color>
+
+</resources>
