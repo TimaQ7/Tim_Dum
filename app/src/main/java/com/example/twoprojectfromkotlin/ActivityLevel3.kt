@@ -1,5 +1,6 @@
 package com.example.twoprojectfromkotlin
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.twoprojectfromkotlin.databinding.ActivityHardBinding
@@ -14,10 +15,10 @@ class ActivityLevel3 : AppCompatActivity() {
 
         val a = (10..399).random()
         val b = (10..499).random()
-        val sign = "+"
-        val sign2 = "-"
-        val sign3 = "*"
-        val sign4 = ":"
+        val sign = Constance.SIGN_PLUS
+        val sign2 = Constance.SIGN_MIN
+        val sign3 = Constance.SIGN_MULT
+        val sign4 = Constance.SIGN_DEV
         val sum = a + b
         val min = a - b
         val mult = a * b
@@ -30,10 +31,21 @@ class ActivityLevel3 : AppCompatActivity() {
         binding.butCheck.setOnClickListener {
         val resultValue = binding.answer2.text.toString()
 
-            if (resultValue == min.toString()) {
-                binding.tvMessage.text = "Congratulation"
-            } else {
-                binding.tvMessage.text = "Don't worry, try tomorrow"
+            when (resultValue) {
+                min.toString() -> {
+                    binding.tvMessage.text = Constance.POSITIVE
+                }
+                "" -> {
+                    binding.tvMessage.text = Constance.NULL
+                }
+                else -> {
+                    binding.tvMessage.text = Constance.NEGATIVE
+                }
+            }
+            binding.butCheck.text = Constance.BUT_1
+            binding.butCheck.setOnClickListener {
+                val intent = Intent(this, ActivityLevel3::class.java)
+                startActivity(intent)
             }
         }
     }

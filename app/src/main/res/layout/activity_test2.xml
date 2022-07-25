@@ -66,8 +66,8 @@
         android:id="@+id/tvMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/bNext"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/butCheck"
         app:layout_constraintEnd_toEndOf="@+id/answer0"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/answer0" />
@@ -110,16 +110,4 @@
         app:layout_constraintStart_toStartOf="@+id/tvGame2"
         app:layout_constraintTop_toTopOf="@+id/tvSign0" />
 
-    <Button
-        android:id="@+id/bNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:onClick="onClickNext"
-        android:text="Next"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/butBack2"
-        app:layout_constraintEnd_toEndOf="@+id/answer0"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="@+id/answer0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

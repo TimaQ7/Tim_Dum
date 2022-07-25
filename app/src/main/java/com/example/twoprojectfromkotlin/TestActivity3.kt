@@ -20,16 +20,16 @@ class TestActivity3 : AppCompatActivity() {
 
         var a = (10..99).random()
         var b = (10..99).random()
-//        val sign = "+"
-        /* val sign2 = "-"
-         val sign3 = "*"
-         val sign4 = ":"*/
+        val sign = Constance.SIGN_PLUS
+        val sign2 = Constance.SIGN_MIN
+        val sign3 = Constance.SIGN_MULT
+        val sign4 = Constance.SIGN_DEV
         val sum = a + b
-        /*   val min = a - b
-           val mult = a * b
-           val dec = a / b*/
+        val min = a - b
+        val mult = a * b
+        val dec = a / b
 
-//        binding.tvSign0.text = sign
+        binding.tvSign0.text = sign
         binding.tvText00.text = a.toString()
         binding.tvText01.text = b.toString()
 
@@ -40,24 +40,21 @@ class TestActivity3 : AppCompatActivity() {
 
             when (resultValue) {
                 sum.toString() -> {
-                    binding.tvMessage.text = "Congratulation"
+                    binding.tvMessage.text = Constance.POSITIVE
                 }
                 "" -> {
-                    binding.tvMessage.text = "You didn't type the answer!"
+                    binding.tvMessage.text = Constance.NULL
                 }
                 else -> {
-                    binding.tvMessage.text = "Don't worry, try tomorrow"
+                    binding.tvMessage.text = Constance.NEGATIVE
                 }
             }
-            binding.butCheck.visibility = View.GONE
-            binding.bNext.visibility = View.VISIBLE
-
+            binding.butCheck.text = Constance.BUT_1
+            binding.butCheck.setOnClickListener {
+                val intent = Intent(this, TestActivity3::class.java)
+                startActivity(intent)
+            }
         }
-
-    }
-    fun onClickNext(view: View) {
-        var intent = Intent(this, TestActivity3::class.java)
-        startActivity(intent)
     }
 }
 
